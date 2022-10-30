@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiThreading.Task3.Matrix
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiThreading.Task4.Threads.Join", "MultiThreading.Task4.Threads.Join\MultiThreading.Task4.Threads.Join.csproj", "{3C9627BE-0041-493D-B2CA-C8CD6B4BB3F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{AF680BC9-B794-49D7-BA7B-F7095F58DDC9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +51,6 @@ Global
 		{3C9627BE-0041-493D-B2CA-C8CD6B4BB3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C9627BE-0041-493D-B2CA-C8CD6B4BB3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C9627BE-0041-493D-B2CA-C8CD6B4BB3F5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF680BC9-B794-49D7-BA7B-F7095F58DDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF680BC9-B794-49D7-BA7B-F7095F58DDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF680BC9-B794-49D7-BA7B-F7095F58DDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF680BC9-B794-49D7-BA7B-F7095F58DDC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
