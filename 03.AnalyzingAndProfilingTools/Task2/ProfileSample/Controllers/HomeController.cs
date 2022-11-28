@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Xml.Linq;
 using ProfileSample.DAL;
 using ProfileSample.Models;
 
@@ -15,24 +16,12 @@ namespace ProfileSample.Controllers
         {
             var context = new ProfileSampleEntities();
 
-            var sources = context.ImgSources.Take(20).Select(x => x.Id);
-            
-            var model = new List<ImageModel>();
+            var images = context.ImgSources.Take(20).Select(item => new ImageModel {
+                Name = item.Name,
+                Data = item.Data
+            }).ToList();
 
-            foreach (var id in sources)
-            {
-                var item = context.ImgSources.Find(id);
-
-                var obj = new ImageModel()
-                {
-                    Name = item.Name,
-                    Data = item.Data
-                };
-
-                model.Add(obj);
-            } 
-
-            return View(model);
+            return View(images);
         }
 
         public ActionResult Convert()
