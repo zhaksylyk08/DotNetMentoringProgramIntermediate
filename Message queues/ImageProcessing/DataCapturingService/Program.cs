@@ -4,8 +4,8 @@ namespace ProcessingService
 {
     internal class Program
     {
-        const string ServiceBusConnectionString = "Endpoint=sb://zhadyrasb.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=NkbtLke9TYhKxroOkRKvgJE5McGrbdH8zv75ekP9+a8=";
-        const string QueueName = "dotnetmentoring";
+        const string ServiceBusConnectionString = "";
+        const string QueueName = "";
         static ServiceBusClient client;
         static ServiceBusSender sender;
 
